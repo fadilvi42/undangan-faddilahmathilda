@@ -1,135 +1,159 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Undangan Pernikahan Fadil & Hillda</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Open Sans', sans-serif;
-      background: #fff8f5;
-      color: #333;
+      font-family: 'Georgia', serif;
+      background-color: #fff8f0;
+      color: #3b0a0a;
+      margin: 0;
+      padding: 0;
     }
+
     header {
-      background: linear-gradient(135deg, #800000, #b8860b);
-      color: white;
-      padding: 3rem 2rem;
+      background-color: #800000;
+      color: gold;
       text-align: center;
+      padding: 40px 20px;
     }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 1rem;
-      font-style: italic;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+
     section {
-      padding: 2rem;
+      padding: 20px;
       max-width: 800px;
       margin: auto;
     }
-    .event {
-      background: #fff;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-left: 5px solid maroon;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      border-radius: 12px;
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.5s ease forwards;
+      margin-bottom: 20px;
     }
-    .event h2 {
-      color: maroon;
-      margin-bottom: 0.5rem;
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .map {
-      text-align: center;
-      margin-top: 2rem;
+
+    .slideshow-container {
+      position: relative;
+      max-width: 600px;
+      margin: auto;
     }
-    .map a {
-      color: #b8860b;
-      font-weight: bold;
-    }
-    form {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    form input, form textarea {
+
+    .mySlides {
+      display: none;
       width: 100%;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 8px;
-      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-    form button {
-      background: maroon;
+
+    .rsvp-form {
+      background-color: #f2e6dc;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .rsvp-form input, .rsvp-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    .rsvp-form button {
+      background-color: #800000;
       color: white;
-      padding: 0.8rem 2rem;
+      padding: 10px 20px;
       border: none;
-      border-radius: 8px;
+      border-radius: 5px;
       cursor: pointer;
     }
+
     footer {
       text-align: center;
-      padding: 2rem;
-      color: #666;
-      font-size: 0.9rem;
+      padding: 20px;
+      background-color: #800000;
+      color: gold;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <audio autoplay loop hidden>
-    <source src="https://www.youtube.com/embed/viW0M5R2BLo?autoplay=1&loop=1&playlist=viW0M5R2BLo" type="audio/mpeg">
-  </audio>
+
+  <!-- Musik latar -->
+  <div style="display: none;">
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/viW0M5R2BLo?autoplay=1&loop=1&playlist=viW0M5R2BLo" frameborder="0" allow="autoplay"></iframe>
+  </div>
 
   <header>
     <h1>M Fadil Viar Mathilda & Hillda Faddilah Mediani</h1>
-    <p>"Aku adalah bait-bait dalam tiap sajakmu, hingga kata tak mampu lagi mewakili tiap rindu yang menyala, berbicara lantang tentang sendu, ditinggal tanpa tahu bila akan bertemu."</p>
+    <p>21 Agustus 2027 • Mercure Hotel Karawang</p>
   </header>
 
   <section>
-    <div class="event">
-      <h2>Akad Nikah</h2>
-      <p>21 Agustus 2027<br>09:00 - 12:00</p>
-      <p>Mercure Hotel Karawang</p>
+    <h2>Puisi Cinta</h2>
+    <p><em>Aku adalah bait-bait dalam tiap sajakmu, hingga kata tak mampu lagi mewakili tiap rindu yang menyala, berbicara lantang tentang sendu, ditinggal tanpa tahu bila akan bertemu.</em></p>
+
+    <h2>Jadwal Acara</h2>
+    <div class="fade-in">
+      <h3>Akad</h3>
+      <p>21 Agustus 2027 pukul 09:00 s.d. 12:00</p>
+    </div>
+    <div class="fade-in">
+      <h3>Resepsi</h3>
+      <p>21 Agustus 2027 pukul 13:00 s.d. selesai</p>
+    </div>
+    <div class="fade-in">
+      <h3>Ngunduh Mantu</h3>
+      <p>27 Agustus 2027 pukul 13:00</p>
     </div>
 
-    <div class="event">
-      <h2>Resepsi</h2>
-      <p>21 Agustus 2027<br>13:00 - selesai</p>
-      <p>Mercure Hotel Karawang</p>
+    <h2>Lokasi</h2>
+    <p><a href="https://maps.app.goo.gl/eF8UADt9nTUvzXUN8" target="_blank">Mercure Hotel Karawang - Klik untuk buka Google Maps</a></p>
+
+    <h2>Galeri Foto</h2>
+    <div class="slideshow-container">
+      <img class="mySlides" src="foto_1.jpg" alt="Foto 1">
+      <img class="mySlides" src="foto_2.jpg" alt="Foto 2">
+      <img class="mySlides" src="foto_3.jpg" alt="Foto 3">
     </div>
 
-    <div class="event">
-      <h2>Ngunduh Mantu</h2>
-      <p>27 Agustus 2027<br>13:00</p>
-    </div>
-
-    <div class="map">
-      <a href="https://maps.app.goo.gl/eF8UADt9nTUvzXUN8" target="_blank">📍 Lihat Lokasi di Google Maps</a>
-    </div>
-  </section>
-
-  <section>
-    <h2>Konfirmasi Kehadiran</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="nama" placeholder="Nama lengkap" required>
-      <input type="number" name="jumlah" placeholder="Jumlah tamu" required>
-      <textarea name="pesan" placeholder="Ucapan atau pesan"></textarea>
-      <button type="submit">Kirim RSVP</button>
+    <h2>Konfirmasi Kehadiran (RSVP)</h2>
+    <form class="rsvp-form" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+      <input type="text" name="nama" placeholder="Nama Anda" required>
+      <input type="email" name="email" placeholder="Email Anda" required>
+      <textarea name="pesan" placeholder="Pesan / Doa" rows="4"></textarea>
+      <button type="submit">Kirim</button>
     </form>
   </section>
 
   <footer>
-    Dengan penuh cinta,<br>
-    Fadil & Hillda | 21 Agustus 2027
+    <p>Terima kasih atas doa dan restunya ♥</p>
   </footer>
+
+  <!-- JS slideshow -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    }
+  </script>
+
 </body>
 </html>
